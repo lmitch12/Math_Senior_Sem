@@ -8,6 +8,20 @@
 
    The goal of this project is to determine if machine learning models can predict celiac disease diagnosis using lab results and patient symptoms, reducing the need for an invasive endoscopy and creating a much simpler, streamlined diagnosis process.
 
+### Data
+The data for this project is publicly available at https://www.kaggle.com/code/minaremon39/celiac-disease-prediction/notebook
+#### Features used:
+- Demographics: age, gender
+- Lab: IgA, IgG, IgM
+- Risk Factors: diabetes_type
+- Symptoms: short_stature, abdominal, sticky_stool, diarrhea, weight_loss
+- Label: disease_diagnose
+#### Features Excluded:
+Excluded to prevent data leakage issues
+- marsh
+- cd_type
+- diabetes
+
 ### Key Findings
 - RandomForest achieved the best results, with a 91% test accuracy and a 99% recall for patients with celiac disease
 - It only misclassified one patient with celiac disease
